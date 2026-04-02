@@ -74,11 +74,22 @@ body {
     transition: var(--transition);
     display: block; /* Evita espacios vacíos debajo de la imagen */
 }
+
 .hero-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Esto hace que el video llene el espacio sin deformarse */
-    filter: brightness(0.7); /* Para que el texto blanco resalte más */
+    object-fit: cover; /* Evita que el video se estire feo */
+    filter: grayscale(100%) brightness(60%); /* Look de lujo en B/N */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Aseguramos que el wrapper tenga dimensiones */
+.hero-image-wrapper {
+    position: relative;
+    background-color: #000; /* Fondo negro por si todo falla */
+    overflow: hidden;
 }
 
 .hero-container:hover .hero-image {
