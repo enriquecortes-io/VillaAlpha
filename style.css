@@ -74,6 +74,12 @@ body {
     transition: var(--transition);
     display: block; /* Evita espacios vacíos debajo de la imagen */
 }
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que el video llene el espacio sin deformarse */
+    filter: brightness(0.7); /* Para que el texto blanco resalte más */
+}
 
 .hero-container:hover .hero-image {
     filter: grayscale(0%) brightness(90%);
