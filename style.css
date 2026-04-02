@@ -161,6 +161,15 @@ body {
     animation: scroll-line 2s infinite;
 }
 
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(20px); filter: blur(10px); }
+    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.hero-typography {
+    animation: reveal 2.5s ease-out forwards;
+}
+
 @keyframes scroll-line {
     0% { top: -60px; }
     50% { top: 0; }
