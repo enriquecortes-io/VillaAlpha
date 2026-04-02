@@ -76,9 +76,9 @@ body {
 }
 
 .hero-container:hover .hero-image {
-    transform: scale(1.05); /* Micro-interacción lenta al pasar el ratón */
+    filter: grayscale(0%) brightness(90%);
+    transform: scale(1.03); /* Un zoom muy lento y elegante */
 }
-
 /* --- Tipografía Gigante Flotante --- */
 .hero-typography {
     grid-column: 1 / 10;
