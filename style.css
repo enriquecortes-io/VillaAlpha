@@ -166,6 +166,18 @@ body {
     to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
+@media (max-width: 768px) {
+    .split-text {
+        font-size: 35vw; /* Ajuste para pantallas verticales */
+        flex-direction: column;
+        line-height: 0.7;
+    }
+    .hero-subtitle {
+        font-size: 0.6rem;
+        letter-spacing: 0.3rem;
+    }
+}
+
 .hero-typography {
     animation: reveal 2.5s ease-out forwards;
 }
